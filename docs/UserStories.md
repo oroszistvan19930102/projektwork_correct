@@ -1,16 +1,13 @@
 ## Digital Bank user stories ##
 #####################################################UserStory-1########################################################
 US1: Bejelentkezés
-Mint regisztrált felhasználó
-Azért, hogy használni tudjam a Digital Bank funkcióit
-Szeretnék sikeresen bejelentkezni érvényes email cím és jelszó megadásával
+Regisztrált felhasználóként szeretnék sikeresen bejelentkezni érvényes email cím és jelszó megadásával
 
 Elfogadási kritériumok:
-A rendszer megjeleníti a bejelentkezési oldalt (email + jelszó mező, „Bejelentkezés” gomb)
-Ha a felhasználó érvényes adatokat ad meg, akkor:
-Bejelentkezteti a felhasználót
-A felhasználót a főoldalra navigálja
-Megjelenik a "dashboard"
+A rendszer megjeleníti a bejelentkezési oldalt
+Érvényes felhasználónevet és jelszót adok meg
+Bejelentkezem.
+A rendszer a dashboard oldalra navigál.
 Hibás adatok esetén megfelelő hibaüzenet jelenik meg.
 #####################################################UserStory-2########################################################
 US2: Folyószámla létrehozása
