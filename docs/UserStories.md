@@ -1,5 +1,5 @@
 ## Digital Bank user stories ##
-
+#####################################################UserStory-1########################################################
 US1: Bejelentkezés
 Mint regisztrált felhasználó
 Azért, hogy használni tudjam a Digital Bank funkcióit
@@ -12,7 +12,7 @@ Bejelentkezteti a felhasználót
 A felhasználót a főoldalra navigálja
 Megjelenik a "dashboard"
 Hibás adatok esetén megfelelő hibaüzenet jelenik meg.
-
+#####################################################UserStory-2########################################################
 US2: Folyószámla létrehozása
 Regisztrált felhasználóként létre tudok hozni folyószámla profilt. 
 
@@ -24,8 +24,7 @@ Checking Account Type és Account Ownership kiválasztása után megadok egy acc
 Ha a deposit amount nem ér el egy minimális értéket, hibaüzenetet kapok.
 Helyes mentés kesetén a View checking accounts oldal töltődik be a meglévő folyószámlák listájával és egy megerősítő üzenettel.
 Létrejött az új folyószámla.
-Dashboard elérése a Digital Bank logóval lehetséges
-
+#####################################################UserStory-3########################################################
 US3: Megtakarítás létrehozása
 Regisztrált felhasználóként létre tudok hozni megtakarítási folyószámla profilt.
 
@@ -37,8 +36,7 @@ Savings Account Type és Account Ownership kiválasztása után megadok egy acco
 Ha a deposit amount nem ér el egy minimális értéket, hibaüzenetet kapok.
 Helyes mentés kesetén a View savings accounts oldal töltődik be a meglévő megtakarítási folyószámlák listájával és egy megerősítő üzenettel.
 Létrejött az új megtakarítási folyószámla.
-Dashboard elérése a „Digital Bank” logóval lehetséges
-
+#####################################################UserStory-4########################################################
 US4: Utalás folyószámlára
 Regisztrált felhasználóként utalni tudok pénzösszeget egy meglévő számlára
 
@@ -47,10 +45,10 @@ A bejelentkezés után a dashboard oldal bal oldali menüjéből kiválasztom a 
 Megjelenik a Deposit oldal
 A legördülő menüből kiválasztom melyik számlára szeretném utalni az összeget.
 A deposit amount alatt megadom az összeget.
+Üresen hagyott deposit amount esetén figyelmeztető üzenet jelenik meg
 Helyes adatok esetén a view checking accounts oldal tölt be.
 A Transactions lista legfelső eleme a legutóbbi tranzakciót mutatja
-Dashboard elérése a „Digital Bank” logóval lehetséges
-
+#####################################################UserStory-5########################################################
 US5: Levétel folyószámláról
 Regisztrált felhasználóként pénzösszeget tudok levonni egy meglévő számláról
 
@@ -62,8 +60,7 @@ A withdraw amount alatt megadom az összeget.
 Ha a levonni kívánt összeg nagyobb mint a folyószámlán található összeg, akkor hibaüzenetet kapok.
 Helyes adatok esetén a view checking accounts oldal tölt be.
 A Transactions lista legfelső eleme a legutóbbi tranzakciót mutatja
-Dashboard elérése a „Digital Bank” logóval lehetséges
-
+#####################################################UserStory-6########################################################
 US6: Folyószámlák közötti tranzakció
 Regisztrált felhasználóként a meglévő folyószámláim között tudok összeget mozgatni.
 
@@ -76,9 +73,7 @@ Ha a mozgatni kívánt összeg nagyobb mint a forrásszámlán található össz
 Ha a forrás- és célszámla ugyanaz, hibaüzenetet kapok.
 Helyes adatok esetén a view checking accounts oldal tölt be.
 A Transactions lista legfelső eleme a legutóbbi tranzakciót mutatja
-Dashboard elérése a „Digital Bank” logóval lehetséges
-
-
+#####################################################UserStory-7########################################################
 US7: Minden tranzakciós és folyószámlaadat törlése
 Regisztrált felhasználóként töröölni tudok minden tranzakciós és folyószámlaadatot
 

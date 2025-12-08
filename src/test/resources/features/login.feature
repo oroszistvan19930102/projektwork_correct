@@ -1,0 +1,20 @@
+Feature: Log in
+  Background:
+    Given the user opens the Digital Bank login page
+
+  Rule: Users with valid credentials can log in successfully
+    Scenario: Successful log in
+      When the user enters valid username "<username>" and password "<password>"
+      And the user clicks on the Sign In button
+      Then the main dashboard page should be displayed
+
+  Rule: Users with invalid credentials see an error message
+    Scenario Outline: Unsuccessful log in
+      When the user enters invalid username "<username>" and password "<password>"
+      And the user clicks on the Sign In button
+      Then an error message should be displayed
+
+      Examples:
+        | username  | password  |
+        | admin1    | pass      |
+        | user1     | pa55w0rd  |
