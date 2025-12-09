@@ -9,9 +9,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@ConfigurationParameter(key = "cucumber.plugin", value = "rerun:target/login/cucumber_rerun.txt")
+@ConfigurationParameter(key = "cucumber.plugin", value = "rerun:reports/login/cucumber_rerun.txt")
 @SelectClasspathResource("features/login.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "steps, hooks")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:target/login/cucumber-reports.html, " + "json:target/login/cucumber-reports.json")
-@ConfigurationParameter(key = "cucumber.filter.tags", value = "@successful")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:reports/login/cucumber-reports.html, " + "json:reports/login/cucumber-reports.json")
+//@ConfigurationParameter(key = "cucumber.filter.tags", value = "@successful_login")
 public class LoginRunner {}

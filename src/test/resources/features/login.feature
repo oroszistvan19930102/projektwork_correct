@@ -1,19 +1,20 @@
 Feature: Log in
   Background:
     Given the user opens the Digital Bank login page
+    And the user accepts the cookies
 
-  @successful
+  @successful_login
   Rule: Users with valid credentials can log in successfully
     Scenario: Successful log in
       When the user enters valid username "oroszistvan1993" and password "Password1!"
-      And the user clicks on the Sign In button
+      And the user logs in
       Then the main dashboard page should be displayed
 
-  @unsuccessful
+  @unsuccessful_login
   Rule: Users with invalid credentials see an error message
     Scenario Outline: Unsuccessful log in
       When the user enters invalid username "<username>" and password "<password>"
-      And the user clicks on the Sign In button
+      And the user logs in
       Then an error message should be displayed
 
       Examples:

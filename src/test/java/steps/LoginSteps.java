@@ -1,48 +1,56 @@
 package steps;
 
 import driver.Settings;
-import hooks.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import lombok.NoArgsConstructor;
+import pages.actions.HomePageActions;
+import pages.actions.LoginPageActions;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@NoArgsConstructor
 public class LoginSteps {
+    private final LoginPageActions loginPageActions = new LoginPageActions();
+    private final HomePageActions homePageActions = new HomePageActions();
+
     @Given("the user opens the Digital Bank login page")
     public void openDigitalBankLoginPage(){
-        Hooks.driver.get(Settings.getLoginUrl());
-        WebElement cookieAcception = Hooks.wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"freeprivacypolicy-com---nb\"]/div/div[3]/button[1]")));
-        assert cookieAcception != null;
-        cookieAcception.click();
+        loginPageActions.driver.get(Settings.getLoginUrl());
+    }
+
+    @And("the user accepts the cookies")
+    public void acceptCookies(){
+        loginPageActions.acceptCookies();
     }
 
     @When("the user enters valid username {string} and password {string}")
     public void enterValidCredentials(String username, String password){
-        WebElement usernameField = Hooks.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='username']")));
-        WebElement passwordField = Hooks.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='password']")));
-
-        assert usernameField != null;
-        usernameField.sendKeys(username);
-        assert passwordField != null;
-        passwordField.sendKeys(password);
+        loginPageActions.fillUsername(username);
+        loginPageActions.fillPassword(password);
     }
 
-    @And("the user clicks on the Sign In button")
+    @And("the user logs in")
     public void clicksOnSignInButton(){
-        WebElement signIn_button = Hooks.wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='submit']")));
-        assert signIn_button != null;
-        signIn_button.click();
+        loginPageActions.signIn();
     }
 
     @Then("the main dashboard page should be displayed")
     public void dashBoardPageDisplayed(){
-        WebElement pageTitle = Hooks.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='page-title']")));
-        assert pageTitle != null;
-        assertTrue(pageTitle.isDisplayed());
+        assertTrue(homePageActions.homePageLoaded());
+    }
+
+    @When("the user enters invalid username {string} and password {string}")
+    public void enterInvalidCredentials(String username, String password){
+        loginPageActions.fillUsername(username);
+        loginPageActions.fillPassword(password);
+    }
+
+    @Then("an error message should be displayed")
+    public void loginErrorMessageDisplayed(){
+        assertTrue(loginPageActions.loginErrorDisplayed());
     }
 }

@@ -25,7 +25,7 @@ public class DriverInitializer {
         switch (browserType) {
             case CHROME_SELMGR -> {
                 ChromeOptions options = new ChromeOptions();
-                //options.addArguments("--incognito");
+                options.addArguments("--incognito");
                 options.addArguments("--disable-blink-features=AutomationControlled");
                 options.addArguments("--disable-infobars");
                 options.addArguments("--start-maximized");

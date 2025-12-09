@@ -2,6 +2,7 @@ package hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.DriverInitializer;
@@ -9,7 +10,9 @@ import driver.DriverInitializer;
 import java.time.Duration;
 
 public class Hooks {
+    @Getter
     public static WebDriver driver;
+    @Getter
     public static WebDriverWait wait;
 
     @Before(order = 0)
