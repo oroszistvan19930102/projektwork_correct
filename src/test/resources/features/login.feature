@@ -15,7 +15,7 @@ Feature: Log in
     Scenario Outline: Unsuccessful log in
       When the user enters invalid username "<username>" and password "<password>"
       And the user logs in
-      Then an error message should be displayed
+      Then a login error message should be displayed
 
       Examples:
         | username  | password  |

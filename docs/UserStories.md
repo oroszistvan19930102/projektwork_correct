@@ -16,16 +16,17 @@ Hogy hozzáférhessek a személyes tartalmakhoz és funkciókhoz*
 ---
 
 ## User Story 2 – Folyószámla létrehozása
-*Regisztrált felhasználóként létre tudok hozni folyószámla profilt.*
+
+*Mint regisztrált felhasználó
+Szeretnék létrehozni egy új folyószámla profilt
+Hogy kezelhessem a pénzügyeimet az alkalmazásban*
 
 ### Elfogadási kritériumok:
-- A bejelentkezés után a dashboard oldal bal oldali menüjéből kiválasztom a **Checking** lehetőséget
-- A legördülő menüből kiválasztom a **New Checking** lehetőséget
-- Megjelenik a **Create checking** oldal
-- **Checking Account Type** és **Account Ownership** kiválasztása után megadok egy **Account Name** és **Deposit Amount** értéket
-- Ha a deposit amount nem ér el egy minimális értéket, hibaüzenetet kapok
-- Helyes mentés esetén a **View checking accounts** oldal töltődik be a meglévő folyószámlák listájával és egy megerősítő üzenettel
-- Létrejött az új folyószámla
+- A felhasználó bejelentkezik az alkalmazásba
+- A felhasználó navigál a folyószámla létrehozási oldalra
+- A felhasználó megadja a szükséges adatokat (pl. számlatípus, tulajdonos, számlanév, kezdő egyenleg)
+- Hibás vagy hiányos adatok esetén a rendszer megfelelő hibaüzenetet jelenít meg
+- Sikeres mentés esetén a rendszer megerősítő üzenetet jelenít meg és megjeleníti a meglévő folyószámlák listáját
 
 ---
 

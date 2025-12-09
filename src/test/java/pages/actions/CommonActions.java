@@ -2,6 +2,7 @@ package pages.actions;
 
 import hooks.Hooks;
 import lombok.Getter;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -26,11 +27,19 @@ public class CommonActions {
         visibleElement.sendKeys(text);
     }
 
-    public void clickButton(WebElement button){
-        this.wait.until(ExpectedConditions.elementToBeClickable(button)).click();
+    public void clickElement(WebElement element){
+        this.wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
+
+    public void clickElement(String text){
+        this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='Standard Checking']"))).click();
     }
 
     public boolean elementIsVisible(WebElement element){
         return this.wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+    }
+
+    public boolean elementIsVisible(String text){
+        return this.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(text))).isDisplayed();
     }
 }

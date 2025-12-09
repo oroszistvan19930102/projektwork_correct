@@ -15,4 +15,12 @@ public class HomePageActions extends CommonActions{
     public boolean homePageLoaded(){
         return elementIsVisible(homePageElements.homePageTitle);
     }
+
+    public void clickChecking(){
+        clickElement(homePageElements.checkingMenu);
+    }
+
+    public void clickNewChecking(){
+        clickElement(homePageElements.newCheckingOption);
+    }
 }

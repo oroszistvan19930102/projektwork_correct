@@ -49,7 +49,7 @@ public class LoginSteps {
         loginPageActions.fillPassword(password);
     }
 
-    @Then("an error message should be displayed")
+    @Then("a login error message should be displayed")
     public void loginErrorMessageDisplayed(){
         assertTrue(loginPageActions.loginErrorDisplayed());
     }
