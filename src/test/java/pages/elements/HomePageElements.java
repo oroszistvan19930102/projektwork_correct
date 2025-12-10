@@ -25,6 +25,22 @@ public class HomePageElements {
     @FindBy(xpath="//*[@id='new-checking-menu-item']")
     public WebElement newCheckingOption;
 
+    @Getter
+    @FindBy(xpath="//*[@id='savings-menu']")
+    public WebElement savingsMenu;
+
+    @Getter
+    @FindBy(xpath="//*[@id='new-savings-menu-item']")
+    public WebElement newSavingsOption;
+
+    @Getter
+    @FindBy(xpath="//*[@id='deposit-menu-item']")
+    public WebElement depositOption;
+
+    @Getter
+    @FindBy(xpath="//*[@id='withdraw-menu-item']")
+    public WebElement withdrawOption;
+
     public HomePageElements(WebDriver driver, WebDriverWait wait){
         this.driver = driver;
         this.wait = wait;

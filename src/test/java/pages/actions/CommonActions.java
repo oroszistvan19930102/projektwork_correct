@@ -42,4 +42,12 @@ public class CommonActions {
     public boolean elementIsVisible(String text){
         return this.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(text))).isDisplayed();
     }
+
+    public WebElement findDOMElementById(String text){
+        return this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='" + text + "']")));
+    }
+
+    public WebElement findDOMElementByPath(String path){
+        return this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
+    }
 }

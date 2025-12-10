@@ -12,12 +12,12 @@ public class ViewCheckingAccountsPageActions extends CommonActions{
         PageFactory.initElements(driver, this);
     }
 
-    public boolean newCheckingIsVisible(String checkingName){
-        String xpath = "//div[@class='h4 m-0' and text()='" + checkingName +"']";
+    public boolean newAccountIsVisible(String accountName){
+        String xpath = "//div[@class='h4 m-0' and text()='" + accountName +"']";
         return elementIsVisible(xpath);
     }
 
-    public boolean confirmationOfCheckingIsDisplayed(){
+    public boolean confirmationOfNewAccountIsDisplayed(){
         return elementIsVisible(viewCheckingAccountsPageElements.confirmationOfCreation);
     }
 }

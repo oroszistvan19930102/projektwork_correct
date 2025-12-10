@@ -38,7 +38,7 @@ public class CreateCheckingPageElements {
     public WebElement initialDepositAmountField;
 
     @Getter
-    @FindBy(xpath = "//*[@id='newCheckingSubmit']")
+    @FindBy(xpath = "//button[@type='submit' and normalize-space()='Submit']")
     public WebElement newCheckingSubmitButton;
 
     @Getter

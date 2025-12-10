@@ -15,7 +15,7 @@ Hogy hozzáférhessek a személyes tartalmakhoz és funkciókhoz*
 
 ---
 
-## User Story 2 – Folyószámla létrehozása
+## User Story 2 – Számla létrehozása
 
 *Mint regisztrált felhasználó
 Szeretnék létrehozni egy új folyószámla profilt
@@ -30,66 +30,59 @@ Hogy kezelhessem a pénzügyeimet az alkalmazásban*
 
 ---
 
-## User Story 3 – Megtakarítás létrehozása
-*Regisztrált felhasználóként létre tudok hozni megtakarítási folyószámla profilt.*
+## User Story 3 – Utalás folyószámlára
+
+*Mint regisztrált felhasználó
+Szeretnék pénzt befizetni egy meglévő folyószámlára
+Hogy növelhessem annak egyenlegét és kezelhessem a pénzügyeimet az alkalmazásban*
 
 ### Elfogadási kritériumok:
-- A bejelentkezés után a dashboard oldal bal oldali menüjéből kiválasztom a **Savings** lehetőséget
-- A legördülő menüből kiválasztom a **New Savings** lehetőséget
-- Megjelenik a **Create savings** oldal
-- **Savings Account Type** és **Account Ownership** kiválasztása után megadok egy **Account Name** és **Deposit Amount** értéket
-- Ha a deposit amount nem ér el egy minimális értéket, hibaüzenetet kapok
-- Helyes mentés esetén a **View savings accounts** oldal tölt be a meglévő megtakarítási folyószámlák listájával és megerősítő üzenettel
-- Létrejött az új megtakarítási folyószámla
+- A felhasználó bejelentkezik az alkalmazásba
+- A felhasználó navigál a befizetési funkcióhoz
+- A felhasználó kiválasztja a befizetési számlát és megadja a befizetendő összeget
+- Hibás, hiányos vagy nem megfelelő összeg esetén a rendszer megfelelő hibaüzenetet jelenít meg
+- Sikeres tranzakció esetén a rendszer megerősítő üzenetet jelenít meg és frissíti a kiválasztott számla tranzakciós listáját
 
 ---
 
-## User Story 4 – Utalás folyószámlára
-*Regisztrált felhasználóként utalni tudok pénzösszeget egy meglévő számlára.*
+## User Story 4 – Levétel folyószámláról
+
+*Mint regisztrált felhasználó
+Szeretnék pénzt levonni egy meglévő folyószámláról
+Hogy kezelhessem a számla egyenlegét az alkalmazásban*
 
 ### Elfogadási kritériumok:
-- A bejelentkezés után a dashboard oldal bal oldali menüjéből kiválasztom a **Deposit** lehetőséget
-- Megjelenik a **Deposit** oldal
-- A legördülő menüből kiválasztom, melyik számlára szeretném utalni az összeget
-- A **Deposit Amount** alatt megadom az összeget
-- Üres **Deposit Amount** esetén figyelmeztető üzenet jelenik meg
-- Helyes adatok esetén a **View checking accounts** oldal tölt be
-- A **Transactions** lista legfelső eleme a legutóbbi tranzakciót mutatja
+- A felhasználó bejelentkezik az alkalmazásba
+- A felhasználó navigál a levonási funkcióhoz
+- A felhasználó kiválasztja a számlát és megadja a levonni kívánt összeget
+- Hibás, hiányos vagy a számla egyenlegét meghaladó összeg esetén a rendszer megfelelő hibaüzenetet jelenít meg
+- Sikeres tranzakció esetén a rendszer megerősítő üzenetet jelenít meg és frissíti a kiválasztott számla tranzakciós listáját
 
 ---
 
-## User Story 5 – Levétel folyószámláról
-*Regisztrált felhasználóként pénzösszeget tudok levonni egy meglévő számláról.*
+## User Story 5 – Folyószámlák közötti tranzakció
+
+*Mint regisztrált felhasználó
+Szeretnék összeget átutalni a saját folyószámláim között
+Hogy egyszerűen kezelhessem pénzügyeimet az alkalmazásban*
 
 ### Elfogadási kritériumok:
-- A bejelentkezés után a dashboard oldal bal oldali menüjéből kiválasztom a **Withdraw** lehetőséget
-- Megjelenik a **Withdraw** oldal
-- A legördülő menüből kiválasztom, melyik számláról szeretném levonni az összeget
-- A **Withdraw Amount** alatt megadom az összeget
-- Ha a levonni kívánt összeg nagyobb, mint a folyószámlán található összeg → hibaüzenet
-- Helyes adatok esetén a **View checking accounts** oldal tölt be
-- A **Transactions** lista legfelső eleme a legutóbbi tranzakciót mutatja
+- A felhasználó bejelentkezik az alkalmazásba
+- A felhasználó navigál a belső átutalási funkcióhoz
+- A felhasználó kiválasztja a forrás- és célszámlát, és megadja az átutalandó összeget
+- Hibás, hiányos, a forrás számla egyenlegét meghaladó összeg vagy azonos forrás- és célszámla esetén a rendszer megfelelő hibaüzenetet jelenít meg
+- Sikeres tranzakció esetén a rendszer megerősítő üzenetet jelenít meg és frissíti a tranzakciós listát a legutóbbi átutalással
 
 ---
 
-## User Story 6 – Folyószámlák közötti tranzakció
-*Regisztrált felhasználóként a meglévő folyószámláim között tudok összeget mozgatni.*
+## User Story 6 – Minden tranzakciós és folyószámlaadat törlése
+
+*Mint regisztrált felhasználó
+Szeretném törölni az összes folyószámla- és tranzakciós adatomat
+Hogy újrakezdhessem vagy eltávolítsam a személyes pénzügyi információkat az alkalmazásból*
 
 ### Elfogadási kritériumok:
-- A bejelentkezés után a dashboard oldal bal oldali menüjéből kiválasztom a **Transfer Between Accounts** lehetőséget
-- Megjelenik az **Internal Transfer** oldal
-- A két legördülő menüből kiválasztom a forrás- és célszámlát
-- A **Transfer Amount** értékhez megadom az összeget
-- Ha a mozgatni kívánt összeg nagyobb, mint a forrásszámlán levő egyenleg → hibaüzenet
-- Ha a forrás- és célszámla ugyanaz → hibaüzenet
-- Helyes adatok esetén a **View checking accounts** oldal tölt be
-- A **Transactions** lista legfelső eleme a legutóbbi tranzakciót mutatja
-
----
-
-## User Story 7 – Minden tranzakciós és folyószámlaadat törlése
-*Regisztrált felhasználóként törölni tudok minden tranzakciós és folyószámlaadatot.*
-
-### Elfogadási kritériumok:
-- A jobb felső profil ikon alól kiválasztom a **Delete data** lehetőséget
-- Minden folyószámla és tranzakciós adat törlődik
+- A felhasználó bejelentkezik az alkalmazásba
+- A felhasználó navigál a profil menü Delete data lehetőségéhez
+- A rendszer minden folyószámlát és tranzakciós adatot töröl
+- 

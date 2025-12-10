@@ -1,6 +1,5 @@
 package steps;
 
-import driver.Settings;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,31 +7,22 @@ import io.cucumber.java.en.When;
 import lombok.NoArgsConstructor;
 import pages.actions.CreateCheckingPageActions;
 import pages.actions.HomePageActions;
-import pages.actions.LoginPageActions;
 import pages.actions.ViewCheckingAccountsPageActions;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @NoArgsConstructor
 public class CheckingSteps {
-    private final LoginPageActions loginPageActions = new LoginPageActions();
     private final HomePageActions homePageActions = new HomePageActions();
     private final CreateCheckingPageActions createCheckingPageActions = new CreateCheckingPageActions();
     private final ViewCheckingAccountsPageActions viewCheckingAccountsPageActions = new ViewCheckingAccountsPageActions();
 
-    @Given("the user is logged in to the Digital Bank System")
-    public void userIsLoggedIn(){
-        loginPageActions.fullLoginProcess();
-        assertTrue(homePageActions.homePageLoaded());
+    @When("the user opens the {string} creation page")
+    public void openCreationPage(String type){
+        homePageActions.selectFromAccounts(type);
     }
 
-    @And("the user opens the checking creation page")
-    public void openCheckingCreationPage(){
-        homePageActions.clickChecking();
-        homePageActions.clickNewChecking();
-    }
-
-    @When("the user selects account type {string}")
+    @And("the user selects account type {string}")
     public void selectAccountType(String accountType){
         createCheckingPageActions.selectAccountType(accountType);
     }
@@ -52,19 +42,19 @@ public class CheckingSteps {
         createCheckingPageActions.fillInitialDepositAmount(initialDepositAmount);
     }
 
-    @And("the user creates the new checking")
-    public void createNewCheckin(){
-        createCheckingPageActions.submitNewChecking();
+    @And("the user creates the new account")
+    public void createNewAccount(){
+        createCheckingPageActions.submitNewAccount();
     }
 
-    @Then("the checkings {string} of the user should be displayed")
-    public void newCheckingIsVisible(String accountName){
-        assertTrue(viewCheckingAccountsPageActions.newCheckingIsVisible(accountName));
+    @Then("the account {string} of the user should be displayed")
+    public void newAccountIsVisible(String accountName){
+        assertTrue(viewCheckingAccountsPageActions.newAccountIsVisible(accountName));
     }
 
     @And("a confirmation message should be displayed")
-    public void confirmationOfCheckingIsDisplayed(){
-        assertTrue(viewCheckingAccountsPageActions.confirmationOfCheckingIsDisplayed());
+    public void confirmationOfSavingsIsDisplayed(){
+        assertTrue(viewCheckingAccountsPageActions.confirmationOfNewAccountIsDisplayed());
     }
 
     @Then("an initial deposit error message should be displayed")

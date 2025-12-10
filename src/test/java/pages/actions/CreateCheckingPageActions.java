@@ -13,11 +13,7 @@ public class CreateCheckingPageActions extends CommonActions{
     }
 
     public void selectAccountType(String accountType){
-        if(accountType.equalsIgnoreCase("Standard Checking")){
-            clickElement(createCheckingPageElements.standardAccountType);
-        }else{
-            clickElement(createCheckingPageElements.interestAccountType);
-        }
+        clickElement(findDOMElementById(accountType));
     }
 
     public void selectOwnership(String ownership){
@@ -36,7 +32,7 @@ public class CreateCheckingPageActions extends CommonActions{
         fillElements(createCheckingPageElements.initialDepositAmountField, initialDepositAmount);
     }
 
-    public void submitNewChecking(){
+    public void submitNewAccount(){
         clickElement(createCheckingPageElements.newCheckingSubmitButton);
     }
 

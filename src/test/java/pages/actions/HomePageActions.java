@@ -16,11 +16,34 @@ public class HomePageActions extends CommonActions{
         return elementIsVisible(homePageElements.homePageTitle);
     }
 
-    public void clickChecking(){
+    private void clickChecking(){
         clickElement(homePageElements.checkingMenu);
     }
 
-    public void clickNewChecking(){
+    private void clickNewChecking(){
         clickElement(homePageElements.newCheckingOption);
+    }
+
+    private void clickSavings(){
+        clickElement(homePageElements.savingsMenu);
+    }
+
+    private void clickNewSavings(){
+        clickElement(homePageElements.newSavingsOption);
+    }
+
+    public void selectFromAccounts(String type){
+        if(type.equalsIgnoreCase("Checking")){
+            this.clickChecking();
+            this.clickNewChecking();
+        }else{
+            this.clickSavings();
+            this.clickNewSavings();
+        }
+    }
+
+    public void gotToTransaction(String transactionType) {
+        transactionType = transactionType.toLowerCase() + "-menu-item";
+        clickElement(findDOMElementById(transactionType));
     }
 }
