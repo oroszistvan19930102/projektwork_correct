@@ -1,0 +1,30 @@
+@objects
+    leftPanel       id left-panel
+    rightPanel      id right-panel
+    header          id header
+    menuToggle      id menuToggle
+    pageTitle       id page-title
+
+= Basic layout =
+# leftPanel rules
+leftPanel
+    visible
+    inside screen 0px
+    width 150 to 350px
+
+# rightPanel rules
+rightPanel
+    visible
+    right-of leftPanel 5 to 60px
+
+# header rules
+header
+    visible
+    inside rightPanel top 0px left 0px
+    height 50 to 120px
+
+# pageTitle rules
+pageTitle
+    visible
+    below header 5 to 80px
+    inside rightPanel 20px

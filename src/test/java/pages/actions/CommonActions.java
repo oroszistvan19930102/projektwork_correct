@@ -2,6 +2,7 @@ package pages.actions;
 
 import hooks.Hooks;
 import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,8 +12,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonActions {
     @Getter
+    @Setter
     public WebDriver driver;
+
     @Getter
+    @Setter
     public WebDriverWait wait;
 
     public CommonActions(){

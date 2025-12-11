@@ -1,7 +1,9 @@
 package pages.actions;
 
 import driver.Settings;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.elements.LoginPageElements;
 
 public class LoginPageActions extends CommonActions{
@@ -11,6 +13,13 @@ public class LoginPageActions extends CommonActions{
 
     public LoginPageActions(){
         super();
+        this.loginPageElements = new LoginPageElements(this.driver, this.wait);
+        PageFactory.initElements(driver, this);
+    }
+
+    public LoginPageActions(WebDriver driver, WebDriverWait wait){
+        this.driver = driver;
+        this.wait = wait;
         this.loginPageElements = new LoginPageElements(this.driver, this.wait);
         PageFactory.initElements(driver, this);
     }

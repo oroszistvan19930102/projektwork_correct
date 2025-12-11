@@ -17,6 +17,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.actions.LoginPageActions;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -24,8 +25,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class LoginPageLayoutTest {
@@ -33,6 +33,7 @@ public class LoginPageLayoutTest {
     @Getter
     public WebDriver driver = Hooks.driver;
     public WebDriverWait wait = Hooks.wait;
+    public LoginPageActions loginPageActions;
 
     private static final String[] MOBILE_TAGS = {"mobile"};
     private static final String[] DESKTOP_TAGS = {"desktop"};
@@ -49,28 +50,21 @@ public class LoginPageLayoutTest {
 
         driver.get(Settings.getLoginUrl());
 
-        WebElement userField = wait.until(d -> d.findElement(By.id("user-name")));
-        userField.clear();
-        userField.sendKeys("standard_user");
+        loginPageActions = new LoginPageActions(this.driver, this.wait);
+        loginPageActions.fullLoginProcess();
 
-        WebElement passField = wait.until(d -> d.findElement(By.id("password")));
-        passField.clear();
-        passField.sendKeys("secret_sauce");
-
-        driver.findElement(By.id("login-button")).click();
-
-        WebElement element = wait.until(d -> d.findElement(By.cssSelector(".title")));
-        assertEquals("Products", element.getText());
+        WebElement title = wait.until(d -> d.findElement(By.id("page-title")));
+        assertTrue(title.isDisplayed(), "A dashboard nem töltődött be");
 
         // Galen layout ellenőrzés
-        layoutReport = Galen.checkLayout(driver, "src/test/resources/gspecs/productsLayout.gspec", Arrays.asList(MOBILE_TAGS));
+        layoutReport = Galen.checkLayout(driver, "src/test/resources/gspecs/dashboardLayout.gspec", Arrays.asList(MOBILE_TAGS));
 
         // Riport generálása
 
         final String REPORT_PATH = "target/galen-html-reports";
         List<GalenTestInfo> tests = new LinkedList<>();
-        GalenTestInfo test = GalenTestInfo.fromString("SauceDemo terméklistázó ellenőrzése");
-        test.getReport().layout(layoutReport, "Terméklistázó layout ellenőrzése");
+        GalenTestInfo test = GalenTestInfo.fromString("Digital Bank mobil layout ellenőrzés");
+        test.getReport().layout(layoutReport, "Layout check – mobile");
         tests.add(test);
 
         new HtmlReportBuilder().build(tests, REPORT_PATH);
@@ -82,8 +76,6 @@ public class LoginPageLayoutTest {
                 if (n.getStatus() == TestReportNode.Status.ERROR) {
                     fail("Teszt sikertelen");
                 }
-
-
             }
         }
     }
