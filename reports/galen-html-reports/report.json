@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "Digital Bank desktop layout ellenőrzés",
+    "startedAt" : 1765447700558,
+    "endedAt" : 1765447700558,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 11,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 11
+    },
+    "testId" : "1-digital-bank-desktop-layout-ellen-rz-s",
+    "duration" : 0,
+    "failed" : false
+  } ]
+}

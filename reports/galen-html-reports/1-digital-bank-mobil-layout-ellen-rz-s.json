@@ -1,0 +1,203 @@
+{
+  "testId" : "1-digital-bank-mobil-layout-ellen-rz-s",
+  "name" : "Digital Bank mobil layout ellenőrzés",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Layout check – mobile",
+      "status" : "info",
+      "time" : 1765447700528,
+      "includedTags" : [ "mobile" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Basic layout",
+        "place" : {
+          "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+          "lineNumber" : 8
+        },
+        "objects" : [ {
+          "name" : "leftPanel",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "height 0 to 50px",
+            "meta" : [ {
+              "from" : {
+                "object" : "leftPanel",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "leftPanel",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "0 to 50px",
+              "realDistance" : "50px"
+            } ],
+            "highlight" : [ "leftPanel" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 32
+            },
+            "name" : "width 0 to 360px",
+            "meta" : [ {
+              "from" : {
+                "object" : "leftPanel",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "leftPanel",
+                "edge" : "right"
+              },
+              "expectedDistance" : "0 to 360px",
+              "realDistance" : "360px"
+            } ],
+            "highlight" : [ "leftPanel" ]
+          } ]
+        }, {
+          "name" : "rightPanel",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 35
+            },
+            "name" : "visible",
+            "highlight" : [ "rightPanel" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 36
+            },
+            "name" : "inside screen",
+            "meta" : [ ],
+            "highlight" : [ "rightPanel", "screen" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 37
+            },
+            "name" : "width ~ 100% of screen/width",
+            "meta" : [ {
+              "from" : {
+                "object" : "rightPanel",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "rightPanel",
+                "edge" : "right"
+              },
+              "expectedDistance" : "98 to 102% [358 to 373px]",
+              "realDistance" : "98% [360px]"
+            } ],
+            "highlight" : [ "rightPanel" ]
+          } ]
+        }, {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 40
+            },
+            "name" : "visible",
+            "highlight" : [ "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 41
+            },
+            "name" : "inside rightPanel",
+            "meta" : [ ],
+            "highlight" : [ "header", "rightPanel" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 42
+            },
+            "name" : "height 0 to 50px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "0 to 50px",
+              "realDistance" : "47px"
+            } ],
+            "highlight" : [ "header" ]
+          } ]
+        }, {
+          "name" : "pageTitle",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 45
+            },
+            "name" : "visible",
+            "highlight" : [ "pageTitle" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 46
+            },
+            "name" : "below header 5 to 30px",
+            "meta" : [ {
+              "from" : {
+                "object" : "pageTitle",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "5 to 30px",
+              "realDistance" : "16px"
+            } ],
+            "highlight" : [ "pageTitle", "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/test/resources/gspecs/dashboardLayout.gspec",
+              "lineNumber" : 47
+            },
+            "name" : "inside rightPanel",
+            "meta" : [ ],
+            "highlight" : [ "pageTitle", "rightPanel" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "leftPanel" : {
+          "area" : [ 0, 0, 360, 50 ]
+        },
+        "rightPanel" : {
+          "area" : [ 0, 50, 360, 136 ]
+        },
+        "pageTitle" : {
+          "area" : [ 15, 114, 89, 32 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 366, 1104 ]
+        },
+        "header" : {
+          "area" : [ 0, 51, 360, 47 ]
+        }
+      },
+      "screenshot" : "layout-2-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

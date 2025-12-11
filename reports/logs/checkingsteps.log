@@ -1,0 +1,112 @@
+2025-december-11 12:08:52 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:08:54 INFO  [CheckingSteps] Selecting account type Standard Checking
+2025-december-11 12:08:55 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:08:55 INFO  [CheckingSteps] Entering account name MyChecking1
+2025-december-11 12:08:56 INFO  [CheckingSteps] Entering initial deposit amount 100
+2025-december-11 12:08:57 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:08:58 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:09:06 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:09:08 INFO  [CheckingSteps] Selecting account type Standard Checking
+2025-december-11 12:09:08 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:09:09 INFO  [CheckingSteps] Entering account name MyChecking2
+2025-december-11 12:09:09 INFO  [CheckingSteps] Entering initial deposit amount 500
+2025-december-11 12:09:10 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:09:11 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:09:19 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:09:20 INFO  [CheckingSteps] Selecting account type Interest Checking
+2025-december-11 12:09:21 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:09:21 INFO  [CheckingSteps] Entering account name MyChecking3
+2025-december-11 12:09:22 INFO  [CheckingSteps] Entering initial deposit amount 1000
+2025-december-11 12:09:22 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:09:24 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:09:32 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:09:34 INFO  [CheckingSteps] Selecting account type Interest Checking
+2025-december-11 12:09:34 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:09:35 INFO  [CheckingSteps] Entering account name MyChecking4
+2025-december-11 12:09:36 INFO  [CheckingSteps] Entering initial deposit amount 2000
+2025-december-11 12:09:36 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:09:38 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:09:45 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:09:46 INFO  [CheckingSteps] Selecting account type Savings
+2025-december-11 12:09:47 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:09:47 INFO  [CheckingSteps] Entering account name MySaving1
+2025-december-11 12:09:48 INFO  [CheckingSteps] Entering initial deposit amount 100
+2025-december-11 12:09:49 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:09:50 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:09:57 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:09:59 INFO  [CheckingSteps] Selecting account type Savings
+2025-december-11 12:10:00 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:10:00 INFO  [CheckingSteps] Entering account name MySaving2
+2025-december-11 12:10:01 INFO  [CheckingSteps] Entering initial deposit amount 500
+2025-december-11 12:10:02 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:10:03 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:10:10 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:10:12 INFO  [CheckingSteps] Selecting account type Money Market
+2025-december-11 12:10:13 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:10:13 INFO  [CheckingSteps] Entering account name MySaving3
+2025-december-11 12:10:14 INFO  [CheckingSteps] Entering initial deposit amount 2500
+2025-december-11 12:10:14 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:10:16 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:10:23 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:10:25 INFO  [CheckingSteps] Selecting account type Money Market
+2025-december-11 12:10:26 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:10:26 INFO  [CheckingSteps] Entering account name MySaving4
+2025-december-11 12:10:27 INFO  [CheckingSteps] Entering initial deposit amount 3000
+2025-december-11 12:10:27 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:10:29 INFO  [CheckingSteps] Successful account creation is successful.
+2025-december-11 12:10:36 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:10:38 INFO  [CheckingSteps] Selecting account type Standard Checking
+2025-december-11 12:10:39 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:10:39 INFO  [CheckingSteps] Entering account name MyWrongChecking1
+2025-december-11 12:10:40 INFO  [CheckingSteps] Entering initial deposit amount 1
+2025-december-11 12:10:40 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:10:42 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:10:49 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:10:51 INFO  [CheckingSteps] Selecting account type Standard Checking
+2025-december-11 12:10:51 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:10:52 INFO  [CheckingSteps] Entering account name MyWrongChecking2
+2025-december-11 12:10:52 INFO  [CheckingSteps] Entering initial deposit amount 5
+2025-december-11 12:10:53 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:10:54 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:11:02 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:11:04 INFO  [CheckingSteps] Selecting account type Interest Checking
+2025-december-11 12:11:05 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:11:05 INFO  [CheckingSteps] Entering account name MyWrongChecking3
+2025-december-11 12:11:06 INFO  [CheckingSteps] Entering initial deposit amount 10
+2025-december-11 12:11:07 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:11:08 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:11:15 INFO  [CheckingSteps] Opening creation page for Checking
+2025-december-11 12:11:17 INFO  [CheckingSteps] Selecting account type Interest Checking
+2025-december-11 12:11:17 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:11:18 INFO  [CheckingSteps] Entering account name MyWrongChecking4
+2025-december-11 12:11:18 INFO  [CheckingSteps] Entering initial deposit amount 20
+2025-december-11 12:11:19 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:11:20 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:11:27 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:11:29 INFO  [CheckingSteps] Selecting account type Savings
+2025-december-11 12:11:29 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:11:30 INFO  [CheckingSteps] Entering account name MyWrongSaving1
+2025-december-11 12:11:31 INFO  [CheckingSteps] Entering initial deposit amount 1
+2025-december-11 12:11:31 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:11:32 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:11:39 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:11:41 INFO  [CheckingSteps] Selecting account type Savings
+2025-december-11 12:11:42 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:11:42 INFO  [CheckingSteps] Entering account name MyWrongSaving2
+2025-december-11 12:11:43 INFO  [CheckingSteps] Entering initial deposit amount 5
+2025-december-11 12:11:44 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:11:45 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:11:52 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:11:54 INFO  [CheckingSteps] Selecting account type Money Market
+2025-december-11 12:11:54 INFO  [CheckingSteps] Selecting ownership type Individual
+2025-december-11 12:11:55 INFO  [CheckingSteps] Entering account name MyWrongSaving3
+2025-december-11 12:11:56 INFO  [CheckingSteps] Entering initial deposit amount 10
+2025-december-11 12:11:56 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:11:58 INFO  [CheckingSteps] Unsuccessful account creation is successful.
+2025-december-11 12:12:05 INFO  [CheckingSteps] Opening creation page for Savings
+2025-december-11 12:12:07 INFO  [CheckingSteps] Selecting account type Money Market
+2025-december-11 12:12:08 INFO  [CheckingSteps] Selecting ownership type Joint
+2025-december-11 12:12:08 INFO  [CheckingSteps] Entering account name MyWrongSaving4
+2025-december-11 12:12:09 INFO  [CheckingSteps] Entering initial deposit amount 20
+2025-december-11 12:12:10 INFO  [CheckingSteps] Creating new account
+2025-december-11 12:12:11 INFO  [CheckingSteps] Unsuccessful account creation is successful.

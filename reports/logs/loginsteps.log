@@ -1,0 +1,15 @@
+2025-december-11 12:06:52 INFO  [LoginSteps] Opening login page.
+2025-december-11 12:06:53 INFO  [LoginSteps] Accepting cookies.
+2025-december-11 12:06:54 INFO  [LoginSteps] Filling in valid username and password.
+2025-december-11 12:06:55 INFO  [LoginSteps] Logging in.
+2025-december-11 12:06:57 INFO  [LoginSteps] Successful logintest is successful.
+2025-december-11 12:07:00 INFO  [LoginSteps] Opening login page.
+2025-december-11 12:07:01 INFO  [LoginSteps] Accepting cookies.
+2025-december-11 12:07:02 INFO  [LoginSteps] Filling in invalid username and password.
+2025-december-11 12:07:03 INFO  [LoginSteps] Logging in.
+2025-december-11 12:07:04 INFO  [LoginSteps] Unsuccessful logintest is successfull.
+2025-december-11 12:07:07 INFO  [LoginSteps] Opening login page.
+2025-december-11 12:07:08 INFO  [LoginSteps] Accepting cookies.
+2025-december-11 12:07:09 INFO  [LoginSteps] Filling in invalid username and password.
+2025-december-11 12:07:10 INFO  [LoginSteps] Logging in.
+2025-december-11 12:07:11 INFO  [LoginSteps] Unsuccessful logintest is successfull.
