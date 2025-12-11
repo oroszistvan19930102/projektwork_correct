@@ -9,9 +9,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@ConfigurationParameter(key = "cucumber.plugin", value = "rerun:reports/checking/cucumber_rerun.txt")
+@ConfigurationParameter(key = "cucumber.plugin", value = "rerun:target/checking/cucumber_rerun.txt")
 @SelectClasspathResource("features/account_creating.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "steps, hooks")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:reports/checking/cucumber-reports.html, " + "json:reports/checking/cucumber-reports.json")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:target/checking/cucumber-reports.html, " + "json:target/checking/cucumber-reports.json")
 //@ConfigurationParameter(key = "cucumber.filter.tags", value = "@unsuccessful_account_creation")
 public class CheckingRunner {}

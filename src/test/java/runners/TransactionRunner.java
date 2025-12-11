@@ -9,9 +9,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@ConfigurationParameter(key = "cucumber.plugin", value = "rerun:reports/transactions/cucumber_rerun.txt")
+@ConfigurationParameter(key = "cucumber.plugin", value = "rerun:target/transactions/cucumber_rerun.txt")
 @SelectClasspathResource("features/transaction.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "steps, hooks")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:reports/transaction/cucumber-reports.html, " + "json:reports/transaction/cucumber-reports.json")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:target/transaction/cucumber-reports.html, " + "json:target/transaction/cucumber-reports.json")
 @ConfigurationParameter(key = "cucumber.filter.tags", value = "@successful_transaction")
 public class TransactionRunner {}
