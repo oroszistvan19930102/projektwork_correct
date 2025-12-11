@@ -19,7 +19,7 @@ public class Hooks {
     public void globalSetUp() {
         System.out.println("Global setup fut...");
         driver = DriverInitializer.initChrome();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         System.out.println("Global setup lefutott.");
     }
 

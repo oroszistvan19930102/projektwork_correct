@@ -9,7 +9,7 @@ Feature: Transaction
       And the user selects the target account "<Target Account>"
       And the user types the amount "<Amount>"
       And the user allows the transaction
-      Then the transaction details should be displayed
+      Then the transaction details "<Target Account>" should be displayed
 
       Examples:
         | Target Account  | Amount  | Transaction  |
@@ -24,7 +24,7 @@ Feature: Transaction
       When the user navigates to "<Transaction>"
       And the user selects the target account "<Target Account>"
       And the user allows the transaction
-      Then a warning message should be displayed
+      Then the transaction details "<Target Account>" should not be displayed
 
       Examples:
         | Target Account     | Transaction  |

@@ -14,7 +14,8 @@ public class CommonDepositWithdrawPageActions extends CommonActions{
     }
 
     public void selectTargetAccount(String targetAccount){
-        targetAccount = "//select[@id='selectedAccount']/option[text()='" + targetAccount + " (Standard Checking)']";
+        //clickElement(commonDepositWithdrawPageElements.targetAccount);
+        targetAccount = "//select[@id='selectedAccount']/option[starts-with(text(),'" + targetAccount + "')]";
         clickElement(findDOMElementByPath(targetAccount));
     }
 

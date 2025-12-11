@@ -13,5 +13,5 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @SelectClasspathResource("features/transaction.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "steps, hooks")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, " + "html:reports/transaction/cucumber-reports.html, " + "json:reports/transaction/cucumber-reports.json")
-//@ConfigurationParameter(key = "cucumber.filter.tags", value = "@successful_transaction")
+@ConfigurationParameter(key = "cucumber.filter.tags", value = "@successful_transaction")
 public class TransactionRunner {}

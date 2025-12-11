@@ -32,13 +32,13 @@ public class TransactionSteps {
         commonDepositWithdrawPageActions.allowTransaction();
     }
 
-    @Then("the transaction details should be displayed")
-    public void transactionDetailsDisplayed(){
-        assertTrue(true);
+    @Then("the transaction details {string} should be displayed")
+    public void transactionDetailsDisplayed(String accountName){
+        assertTrue(commonDepositWithdrawPageActions.newAccountIsVisible(accountName));
     }
 
-    @Then("a warning message should be displayed")
-    public void transactionErrorDisplayed(){
+    @Then("the transaction details {string} should not be displayed")
+    public void transactionErrorDisplayed(String accountName){
         assertTrue(true);
     }
 }

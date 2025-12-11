@@ -1,0 +1,20 @@
+@objects
+    logo                css         .app_logo
+    title               css         .title
+    sort                css         .product_sort_container
+    inventory_list      css         .inventory_list
+    inventory_item*     css         div.inventory_item
+
+= Main layout =
+    logo:
+        centered horizontally inside viewport
+
+    @on desktop
+        title:
+            width <100px
+            height <50px
+
+    @on mobile
+        title:
+            width <100px
+            height <50px

@@ -74,15 +74,3 @@ Hogy egyszerűen kezelhessem pénzügyeimet az alkalmazásban*
 - Sikeres tranzakció esetén a rendszer megerősítő üzenetet jelenít meg és frissíti a tranzakciós listát a legutóbbi átutalással
 
 ---
-
-## User Story 6 – Minden tranzakciós és folyószámlaadat törlése
-
-*Mint regisztrált felhasználó
-Szeretném törölni az összes folyószámla- és tranzakciós adatomat
-Hogy újrakezdhessem vagy eltávolítsam a személyes pénzügyi információkat az alkalmazásból*
-
-### Elfogadási kritériumok:
-- A felhasználó bejelentkezik az alkalmazásba
-- A felhasználó navigál a profil menü Delete data lehetőségéhez
-- A rendszer minden folyószámlát és tranzakciós adatot töröl
-- 

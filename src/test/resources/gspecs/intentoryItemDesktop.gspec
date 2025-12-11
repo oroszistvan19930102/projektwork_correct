@@ -1,0 +1,19 @@
+@Object
+    inventory_item_img      css     img.inventory_item_img
+    inventory_item_name     css     div.inventory_item_name
+    inventory_item_price    css     div.inventory_item_price
+
+    inventory_item_img:
+        inside      parent
+        width       150 to 175 px
+        height      225 to 250 px
+        left-of     inventory_item_name ~162px
+
+    inventory_item_name:
+        inside      parent
+        width       600 to 650 px
+        height      20px
+        right-of    inventory_item_img ~162px
+
+    inventory_item_price:
+        below inventory_item_name
