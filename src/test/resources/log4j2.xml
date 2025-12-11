@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <File name="HooksLogger" fileName="target/logs/hooks.log" append="true" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MMMM-dd HH:mm:ss} %-5level [%c{1}] %msg%n"/>
+        </File>
+        <File name="CommonStepsLogger" fileName="target/logs/commonsteps.log" append="true" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MMMM-dd HH:mm:ss} %-5level [%c{1}] %msg%n"/>
+        </File>
+        <File name="LoginStepsLogger" fileName="target/logs/loginsteps.log" append="true" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MMMM-dd HH:mm:ss} %-5level [%c{1}] %msg%n"/>
+        </File>
+        <File name="CheckingStepsLogger" fileName="target/logs/checkingsteps.log" append="true" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MMMM-dd HH:mm:ss} %-5level [%c{1}] %msg%n"/>
+        </File>
+        <File name="TransactionStepsLogger" fileName="target/logs/transactionsteps.log" append="true" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MMMM-dd HH:mm:ss} %-5level [%c{1}] %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="hooks.Hooks" level="info" additivity="false">
+            <AppenderRef ref="HooksLogger"/>
+        </Logger>
+        <Logger name="steps.CommonSteps" level="info" additivity="false">
+            <AppenderRef ref="CommonStepsLogger"/>
+        </Logger>
+        <Logger name="steps.LoginSteps" level="info" additivity="false">
+            <AppenderRef ref="LoginStepsLogger"/>
+        </Logger>
+        <Logger name="steps.CheckingSteps" level="info" additivity="false">
+            <AppenderRef ref="CheckingStepsLogger"/>
+        </Logger>
+        <Logger name="steps.TransactionSteps" level="info" additivity="false">
+            <AppenderRef ref="TransactionStepsLogger"/>
+        </Logger>
+        <Root level="info">
+        </Root>
+    </Loggers>
+</Configuration>

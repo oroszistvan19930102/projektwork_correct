@@ -6,10 +6,14 @@ import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.DriverInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
 public class Hooks {
+    private static final Logger logger = LoggerFactory.getLogger(Hooks.class);
+
     @Getter
     public static WebDriver driver;
     @Getter
@@ -17,18 +21,19 @@ public class Hooks {
 
     @Before(order = 0)
     public void globalSetUp() {
-        System.out.println("Global setup fut...");
+        new java.io.File("target/logs").mkdirs();
+        logger.info("Global setup fut...");
         driver = DriverInitializer.initChrome();
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        System.out.println("Global setup lefutott.");
+        logger.info("Global setup lefutott.");
     }
 
     @After(order = 0)
     public void globalTearDown() {
-        System.out.println("Global teardown fut...");
+        logger.info("Global teardown fut...");
         if (driver != null) {
             driver.quit();
         }
-        System.out.println("Global teardown lefutott.");
+        logger.info("Global teardown lefutott.");
     }
 }
